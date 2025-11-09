@@ -60,5 +60,30 @@ int main(){
     cout << boolalpha << palindrome(0,str,str.size());
 }
 
+
+//fibonacci series -- for loop
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int first=0;
+    int second=1;
+    for(int i=0;i<5;i++){
+        int c=first+second;
+        first=second;
+        second=c;
+    }
+    cout << second;
+}
+
 */
-//fibonacci series
+
+//fibonacci series -->recursion
+#include<bits/stdc++.h>
+using namespace std;
+int fib(int n){
+    if(n<=1) return n;
+    return fib(n-1)+fib(n-2);
+}
+int main(){
+cout << fib(0);
+}
